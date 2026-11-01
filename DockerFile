@@ -1,0 +1,29 @@
+
+# Use Nginx as the base image
+FROM nginx:alpine
+
+# Copy application files to Nginx web directory
+COPY index.html /usr/share/nginx/html/index.html
+
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx server
+CMD ["nginx", "-g", "daemon off;"]
+
+
+
+
+4. Build the Docker image
+Open the VS Code terminal.
+
+Make sure you are inside the Docker-Web-App folder.
+
+Run:
+docker build -t my-web-app .
+
+Check whether the image was created:
+docker images
+
+Run the Docker container
+docker run -d -p 8080:80 --name my-container my-web-app
