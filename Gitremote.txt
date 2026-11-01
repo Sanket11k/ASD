@@ -1,0 +1,37 @@
+# EXPERIMENT: REMOTE REPOSITORY OPERATIONS USING GIT AND GITHUB
+
+# 1. Clone the GitHub repository to your computer
+git clone https://github.com/Sanket11k/g.git
+
+# 2. Navigate into the cloned repository
+cd g
+
+# 3. Check the remote repository URL
+git remote -v
+
+# 4. Check the current Git status
+git status
+
+# 5. Create a new file
+echo "Learning Git Remote Operations" > demo.txt
+
+# 6. Stage the file
+git add demo.txt
+
+# 7. Commit the changes
+git commit -m "Added demo file"
+
+# 8. Push local changes to GitHub
+git push -u origin main
+
+# 9. Fetch the latest changes from GitHub
+git fetch origin
+
+# 10. Check the current status
+git status
+
+# 11. Pull the latest changes from GitHub
+git pull origin main
+
+# 12. Display the commit history
+git log --oneline
