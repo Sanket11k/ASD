@@ -1,0 +1,65 @@
+# Step 1: Create a project folder
+mkdir GitBranching
+
+# Step 2: Navigate into the folder
+cd GitBranching
+
+# Step 3: Initialize a Git repository
+git init
+
+# Step 4: Configure username
+git config --global user.name "Your Name"
+
+# Step 5: Configure email
+git config --global user.email "your@email.com"
+
+# Step 6: Create an HTML file
+echo "Welcome to Git Branching Experiment" > index.html
+
+# Step 7: Check repository status
+git status
+
+# Step 8: Add the file to staging area
+git add index.html
+
+# Step 9: Commit the initial file
+git commit -m "Initial commit"
+
+# Step 10: Create a new branch named feature
+git branch feature
+
+# Step 11: Display all available branches
+git branch
+
+# Step 12: Switch to the feature branch
+git switch feature
+
+# Step 13: Add new content to the file
+echo "This is a new feature added." >> index.html
+
+# Step 14: Check modified files
+git status
+
+# Step 15: Stage the modified file
+git add index.html
+
+# Step 16: Commit the changes in feature branch
+git commit -m "Added new feature"
+
+# Step 17: Switch back to the main branch
+git switch main
+
+# Step 18: Merge feature branch into main
+git merge feature
+
+# Step 19: Display the updated file content
+cat index.html
+
+# Step 20: Display all branches
+git branch
+
+# Step 21: Display commit history
+git log --oneline --all --graph
+
+# Step 22: Check final repository status
+git status
