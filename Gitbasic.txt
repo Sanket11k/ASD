@@ -1,0 +1,59 @@
+# 1. Check Git version
+git --version
+
+# 2. Configure Git username
+git config --global user.name "Sanket"
+
+# 3. Configure Git email
+git config --global user.email "Sanket11@gmail.com"
+
+# 4. Verify Git configuration
+git config --global --list
+
+# 5. Create a project folder
+mkdir GitExperiment
+
+# 6. Navigate into the project folder
+cd GitExperiment
+
+# 7. Initialize an empty Git repository
+git init
+
+# 8. Create an HTML file
+echo "Hello, Git!" > index.html
+
+# 9. Check repository status
+git status
+
+# 10. Add the file to the staging area
+git add index.html
+
+# 11. Check status after staging
+git status
+
+# 12. Commit the staged file
+git commit -m "Initial commit"
+
+# 13. Modify the existing file
+echo "Learning Git operations" >> index.html
+
+# 14. Display unstaged changes
+git diff
+
+# 15. Stage the modified file
+git add index.html
+
+# 16. Display staged changes
+git diff --staged
+
+# 17. Commit the updated file
+git commit -m "Updated index.html"
+
+# 18. Check final repository status
+git status
+
+# 19. Display complete commit history
+git log
+
+# 20. Display commit history in one line
+git log --oneline
