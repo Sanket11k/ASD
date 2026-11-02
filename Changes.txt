@@ -1,0 +1,8 @@
+@⁨all⁩ mlflow ke code me 
+sklearn.log_model() 
+wali jo line h use 
+mlflow.sklearn.log_model(
+            model,
+            "decision_tree_model"
+        )
+se replace krna agar error aaya fir
